@@ -6,6 +6,7 @@
 - Add route skeleton for user login, signup, purchase a course, see all course, sees the purchased courses course.
 - Add  routes for admin login, admin signup, create a course, delete a course, add course content.
 - Define the schema for User, Admin, Course, Purchase
-- Add middlewares for user and admin auth
 - Add a database (mongodb), use dotenv to store the datbase connection string
-
+- Add middlewares for user and admin auth
+- Complete the routes for user login, signup, purchase a course, see course (Extra points - Use express routing to better structure your routes)
+- Create the frontend

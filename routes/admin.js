@@ -14,17 +14,17 @@ adminRouter.post("/signin", function (res, req) {
   })
 })
 
-adminRouter.post("/course", function(res, req) {
+adminRouter.post("/", function(res, req) {
   res.json({
     message: ""
   })
 })
-adminRouter.put("/course", function(res, req){
+adminRouter.put("/", function(res, req){
   res.json({
     message: ""
   })
 })
-adminRouter.get("/course/bulk", function(res, req){
+adminRouter.get("/bulk", function(res, req){
   res.json({
     message: ""
   })
