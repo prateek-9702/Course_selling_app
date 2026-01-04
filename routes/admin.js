@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const adminRouter = Router();
 const { adminModel } = require("../db");
-
+// brcypt, zod, 
 adminRouter.post("/signup", function (res, req) {
   res.json ({
     message: "signup endpoint"
@@ -14,17 +14,17 @@ adminRouter.post("/signin", function (res, req) {
   })
 })
 
-adminRouter.post("/", function(res, req) {
+adminRouter.post("/course", function(res, req) {
   res.json({
     message: ""
   })
 })
-adminRouter.put("/", function(res, req){
+adminRouter.put("/course", function(res, req){
   res.json({
     message: ""
   })
 })
-adminRouter.get("/bulk", function(res, req){
+adminRouter.get("/course/bulk", function(res, req){
   res.json({
     message: ""
   })
