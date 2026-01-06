@@ -46,12 +46,8 @@ adminRouter.post("/signin", async function (req, res) {
   
 })
 
-adminRouter.post("/course", function(res, req) {
-  res.json({
-    message: ""
-  })
-})
-adminRouter.put("/course", adminMiddleware, async function(res, req){
+
+adminRouter.post("/course", adminMiddleware, async function(req, res){
   const adminId = req.userId;
 
   const { title, description, imageUrl, price } = req.body;
@@ -61,6 +57,12 @@ adminRouter.put("/course", adminMiddleware, async function(res, req){
   res.json({
     message: "Course created",
     creatorId: course._id
+  })
+})
+
+adminRouter.put("/course", function(res, req) {
+  res.json({
+    message: ""
   })
 })
 adminRouter.get("/course/bulk", function(res, req){
